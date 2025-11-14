@@ -1,0 +1,117 @@
+.inside {
+  min-width: 320px;
+  max-width: 600px;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.site-content {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  flex: 1;
+}
+
+.infoboxen {
+  background-color: var(--medColour);
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+  margin-bottom: 2rem;
+}
+.infobox {
+  background-color: var(--lightestcolour);
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.25rem 0.25rem;
+}
+
+.call-to-action.fit-content {
+  margin-inline: 0; 
+  max-width: fit-content;
+  background-color: white;
+}
+
+ul.projekte { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); 
+  grid-gap: 1rem; 
+  
+  list-style: none; 
+  padding: 1; 
+  margin: 0; 
+  margin-top: 2rem;
+}
+
+li.projekt { 
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  background-color: var(--lightestcolour);
+  color: var(--textColour); 
+  padding: 2rem 1rem;
+
+}
+li.projekt a:last-child {
+  margin-top: auto; 
+}
+
+.abschnitt-projekte,
+.abschnitt-obsidian,
+.abschnitt-linked {
+  padding: 3rem 0;
+  margin: 3rem 0;
+}
+.abschnitt-projekte,
+.abschnitt-linked {
+  background-color: var(--medColour);
+  color: var(--darkcolour);
+}
+.abschnitt-obsidian {
+  background-color: var(--basisfarbe);
+  color: var(--darkcolour);
+}
+.abschnitt-linked {
+  margin-bottom: -2rem;
+}
+
+.abschnitt-linked .text {
+  flex-flow: row-reverse;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  gap: 3rem; 
+}
+
+
+.kundenstimme {
+  background-color: var(--lightestcolour);
+  color: var(--textColour);
+  padding: 1rem;
+  border-left: 5px solid var(--accentcolour);
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style-type: "\2713\00a0";
+  background-color: var(--green);
+  border-radius: 0.5rem;
+  padding-block: 0.5rem;
+}
+
+.listnot {
+  list-style-type: "\2718\00a0";
+  background-color: var(--red);
+  border-radius: 0.5rem;
+  padding-block: 0.5rem;
+}
+.med {
+  font-size:larger;
+  border-bottom: 1px solid var(--darkcolour);
+}
+
+.hide{
+  display: none;
+  visibility: hidden;
+}

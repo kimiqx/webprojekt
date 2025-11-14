@@ -1,0 +1,47 @@
+/* Stylesheet für die Navigation */
+
+.site-nav {
+  background-color: var(--darkcolour);
+  padding: 0 ; 
+  margin: 0;
+  color: var(--basisfarbe);
+  border-top: 2px solid var(--lightestcolour);
+  border-bottom: 2px solid var(--lightestcolour);
+
+}
+
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+}
+
+.site-nav li {
+  flex: 1; 
+  border-left: 1px solid var(--lightestcolour);
+}
+.site-nav li:last-child {
+  border-right: 1px solid var(--lightestcolour); 
+}
+
+.site-nav a {
+  display: block; 
+  color: var(--basisfarbe); 
+  text-decoration-line: none;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  min-height: 100%;
+}
+.site-nav a[aria-current],
+.site-nav a:hover, 
+.site-nav a:focus {
+  background-color: var(--medColour);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  color: var(--darkcolour);
+}
+
+.site-nav a:active {
+  background-color: var(--lightblue);
+}
